@@ -15,5 +15,5 @@ jobs:
       - name: Build backend Docker image
         run: docker build -t agentic-backend ./backend
 
-      - name: Build frontend Docker image
-        run: docker build -t agentic-frontend ./frontend
+      # - name: Build frontend Docker image
+      #   run: docker build -t agentic-frontend ./frontend
