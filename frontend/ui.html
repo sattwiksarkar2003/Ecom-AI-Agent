@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: repeating-linear-gradient(
+          90deg,
+          #7b3998,
+          #7b3998 40px,
+          #f7dc71 40px,
+          #f7dc71 60px
+        );
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .google-searchbar-container {
+        background: #fff;
+        border-radius: 32px;
+        box-shadow: 0 2px 6px 0 rgba(60, 64, 67, 0.15);
+        display: flex;
+        align-items: center;
+        width: 600px;
+        height: 60px;
+        padding: 0 20px;
+      }
+      .google-searchbar-container input[type="text"] {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        background: transparent;
+        padding: 0 12px;
+        height: 100%;
+      }
+      .icon-btn {
+        border: none;
+        background: none;
+        padding: 0 7px;
+        cursor: pointer;
+        outline: none;
+        display: flex;
+        align-items: center;
+      }
+      .icon-btn img {
+        width: 26px;
+        height: 26px;
+        opacity: 0.75;
+      }
+      .search-icon {
+        margin-right: 7px;
+        margin-left: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="google-searchbar-container">
+      <span class="search-icon">
+        <img
+          src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"
+          alt="Search"
+        />
+      </span>
+      <input type="text" placeholder="Search ..." />
+      <button class="icon-btn" title="Voice Search">
+        <img src="./icons/microphone-solid-full.svg" alt="Voice" />
+      </button>
+      <button class="icon-btn" title="Google Lens">
+        <img src="./icons/camera-solid-full.svg" alt="Lens" />
+      </button>
+    </div>
+  </body>
+</html>
