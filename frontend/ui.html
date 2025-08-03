@@ -51,6 +51,9 @@
         margin-left: 2px;
       }
     </style>
+
+    <script src="/frontend/static/script.js"></script>
+
   </head>
   <body>
     <div class="google-searchbar-container">
@@ -61,7 +64,7 @@
         />
       </span>
       <input type="text" placeholder="Search ..." />
-      <button class="icon-btn" title="Voice Search">
+      <button class="icon-btn" title="Voice Search" onclick="triggerVoiceSearch()">
         <img src="./icons/microphone-solid-full.svg" alt="Voice" />
       </button>
       <button class="icon-btn" title="Google Lens">
